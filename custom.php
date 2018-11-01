@@ -26,6 +26,7 @@ function remove_built_in_roles() {
     foreach ($roles_to_remove as $role) {
         if (isset($wp_roles->roles[$role])) {
             $wp_roles->remove_role($role);
+		//somehere
         }
     }
 }
@@ -216,6 +217,7 @@ if (!function_exists('getOrderDetailById')) {
             'coupon_lines' => array(),
         );
         //getting all line items
+	    //anotherhre
         foreach ($order->get_items() as $item_id => $item) {
             $product = $item->get_product();
             $product_id = null;
