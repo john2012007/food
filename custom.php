@@ -1,4 +1,5 @@
 <?php 
+//added
 add_role(
     'driver',
     __( 'Driver' ),
